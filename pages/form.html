@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="../css/styleformat.css">
+</head>
+<body>
+    <div class="container">
+        <div class="together">
+        <h1>Contact Informations</h1>
+        <img src="../images/contact.gif">
+        </div>
+        <form id="ContactForm" class="stuff">
+            <label for="FullName">Full Name:</label>
+            <input type="text" id="name" name="FullName" required><br>
+
+            <label for="Age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="Phone">Phone:</label>
+            <input type="number" id="phone" name="Phone" required><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        
+        <div class="together">
+            <h1>House Preference</h1>
+            <img src="../images/house.gif">
+            </div>
+        <form id="HousePreferenceForm" class="house-preference">
+            <label for="Option">Option:</label>
+            <select id="option" name="Option" required>
+                <option value="">Select...</option>
+                <option value="buy">Buy</option>
+                <option value="rent">Rent</option>
+            </select><br>
+
+            <label for="Surface">Surface (in sq m):</label>
+            <input type="number" id="surface" name="Surface" required><br>
+
+            <label for="NumRooms">Number of Rooms:</label>
+            <input type="number" id="numRooms" name="NumRooms" required><br>
+
+            <label for="Situation">Situation:</label>
+            <select id="situation" name="Situation" required>
+                <option value="">Select...</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="not-so-good">Not so good</option>
+                <option value="bad">Bad</option>
+            </select><br>
+
+            <label for="Price">Price:</label>
+            <input type="number" id="price" name="Price" required><br>
+
+            <label for="WhenNeeded">When Do You Need It:</label>
+            <input type="date" id="whenNeeded" name="WhenNeeded" required><br>
+
+            <label for="Location">Location:</label>
+            <input type="text" id="location" name="Location" required><br>
+
+            <button type="submit" id="submitHousePreference" disabled>Submit</button>
+
+        </form>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
