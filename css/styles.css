@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 20px;
+    background-color: aliceblue;
+    color: black;
+}
+
+.stuff {
+    text-align: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    height: 400px;
+    margin-top: 200px;
+    margin-left: 350px;
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative; /* Enable absolute positioning of child elements */
+    overflow: hidden; /* Ensure child elements do not overflow the container */
+    background-image: url('../images/giphy.gif'); /* Add your GIF here */
+    background-size: cover; /* Make the background cover the entire area */
+    background-position: center; /* Center the background image */
+}
+
+.stuff h1, .stuff p, .stuff div {
+    position: relative; /* Keep text above the background */
+    z-index: 1; /* Ensure text appears above the background */
+    color: black; /* Ensure the text color is set */
+}
+
+.stuff h1 {
+    margin: 0; /* Remove margin to prevent layout issues */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    12.5% {
+        transform: translateY(-2.5px);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    37.5% {
+        transform: translateY(-7.5px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    62.5% {
+        transform: translateY(7.5px);
+    }
+    75% {
+        transform: translateY(5px);
+    }
+    87.5% {
+        transform: translateY(2.5px);
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+.stuff:hover {
+    animation: float 5s ease-in-out infinite; /* Continuous floating effect on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Optional: make shadow stronger on hover */
+}
+
+button {
+    background-color: rgb(203, 203, 250);
+    border: 1px solid rgb(108, 108, 255);
+    color: rgb(111, 111, 251);
+    border-radius: 50px;
+    font-size: 40px;
+    font-weight: 100;
+    padding: 20px 50px;
+    margin-top: 75px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(171, 171, 243);
+    color: rgb(78, 78, 253);
+}
+
+p {
+    width: 400px;
+    margin-left: 150px;
+}
+
+
+/* Header styling */
+.Header {
+    background-color: rgb(108, 108, 255);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-left: -50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position:fixed ;
+    top: 0;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.Header h1 {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color:rgb(108, 108, 255);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+footer p {
+    margin-left: 600px;
+}
+
+@media (max-width: 768px) {
+    .stuff {
+        width: 80%; /* Adjust for mobile */
+        margin-top: 100px;
+        margin-left: 10px;
+        padding: 30px;
+    }
+    .stuff p {
+       width: 200px;
+       margin-left: 30px;
+       background-color: rgba(197, 228, 255, 0.281);
+       padding: 20px 20px;
+    }
+    
+    button {
+        font-size: 28px; /* Adjust button size for mobile */
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+    .buttons{
+        margin-left: 40px;
+    }
+
+    .Header {
+        font-size: 20px; /* Adjust header size for mobile */
+    }
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color:rgb(108, 108, 255);
+        color: #fff;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+    footer p {
+        margin-left: 00px;
+    }
+}
